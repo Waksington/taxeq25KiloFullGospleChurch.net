@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxeq 25Kilo Mulu Wongel Blivers Church Departments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('backgrund.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #ffd500;
+            border-radius: 5px;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: rgba(136, 226, 180, 0.9);
+            min-width: 160px;
+            top: 40px;
+            left: 0;
+            z-index: 1000;
+            border-radius: 5px;
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: white;
+        }
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .user-profile {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            text-align: right;
+        }
+        .user-profile a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        h1, h2, h3, h4 {
+            color: #ffcc00;
+        }
+        .content {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(197, 70, 70, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        button {
+            background-color: #ffcc00;
+            color: black;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #e6b800;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginLink = document.querySelector('.login-link');
+            const profileLink = document.querySelector('.profile-link');
+
+            // Simulate a check for user login status
+            const isLoggedIn = true; // Change this based on actual login status
+
+            if (isLoggedIn) {
+                loginLink.style.display = 'none';
+                profileLink.style.display = 'inline';
+            } else {
+                profileLink.style.display = 'none';
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="user-profile">
+            <a href="profile.html" class="profile-link">Profile</a>
+            <a href="login.html" class="login-link">Login</a>
+        </div>
+        <img src="images.jpeg" style="border-radius: 50%; width: 120px; height: 120px;">
+        <h1>Mulu Wongel Church</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Ministers ▼</a>
+                <div class="dropdown">
+                    <a href="Choirs.html">Choirs</a>
+                    <a href="Iders.html">Iders</a>
+                    <a href="Evangelists.html">Evangelists</a>
+                    <a href="group of charity.html">Groups Of Charity</a>
+                    <a href="paasters.html">Pastors</a>
+                </div>
+            </li>
+            <li><a href="Dayly programs.html">Our Daily Programs</a></li>
+            <li><a href="Contact Us.html">Contact</a></li>
+            <li><a href="About Us.html">Story</a></li>
+            <li><a href="log-in.html" class="login-link">Login</a></li>
+            <li><a href="profile.html" class="profile-link">Profile</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2><u>What is Church?</u></h2>
+        <p>Church is not just a building; it is a community of believers. “Where two or more are gathered in the name of Jesus, we have a church.” Many believe that church must occur in a building with a steeple. Church can occur on a beach. It can occur at a kitchen table or in a family room. It can occur in a park or a coffee shop. It can occur over the telephone or online. Church is two or more people coming together in the name of Christ, to show their love for each other, for their communities, for their friends, for their neighbours and for their enemies.</p>
+        <h2><u>What is Christianity?</u></h2>
+        <p>Christianity, major religion stemming from the life, teachings, and death of Jesus of Nazareth (the Christ, or the Anointed One of God) in the 1st century CE. It has become the largest of the world’s religions and, geographically, the most widely diffused of all faiths. It has a constituency of more than two billion believers. Its largest groups are the Roman Catholic Church, the Eastern Orthodox churches, and the Protestant churches. The Oriental Orthodox churches constitute one of the oldest branches of the tradition but had been out of contact with Western Christianity and Eastern Orthodoxy from the middle of the 5th century until the late 20th century because of a dispute over Christology.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our daily programs</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 150px;
+            top: 30px;
+            left: 0;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="Front page.html">Home</a></li>
+            <li>
+                <a href="#">Ministers ▼</a>
+                <div class="dropdown">
+                    <a href="Choirs.html">Choirs</a>
+                    <a href="Iders.html">Iders</a>
+                    <a href="Evangelists.html">Evangelists</a>
+                    <a href="group of charity.html">Group of Charity</a>
+                </div>
+            </li>
+            <li><a href="Contact Us.html">Contact</a></li>
+            <li><a href="About Us.html">Story</a></li>
+        </ul>
+    </nav>
+    <h1><u>Follow our daily programs.</u></h1>
+    <p>Our daily programs are as follows:</p>
+    <table style="width: 100%;">
+        <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Program</th>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>8:00-11:00</td>
+            <td>Worship</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>8:00-11:00</td>
+            <td>Worship</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>8:00-11:00</td>
+            <td>Worship</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>8:00-11:00</td>
+            <td>Worship</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>8:00-11:00</td>
+            <td>Worship</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>8:00-11:00</td>
+            <td>Worship</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>8:00-11:00</td>
+            <td>Worship</td>
+        </tr>
+    </table>
+</body>
+</html>

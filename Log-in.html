@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sing-in</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            border-image: fill;
+            background: linear-gradient(to right, rgb(115, 0, 255), blue);
+        }
+        .loginbox {
+            margin: 15%;
+        }
+        .loginbox label {
+            font-family: comic Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        input {
+            width: 200px;
+            height: 25px;
+        }
+        .ll {
+            color: white;
+            text-decoration: none;
+        }
+        .ss {
+            width: 100px;
+            height: 26px;
+            background-color: rgba(0, 0, 0, 0.758);
+            color: white;
+        }
+        .ss:hover {
+            background-color: white;
+            color: black;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function validateLogin(event) {
+            event.preventDefault();
+            const username = document.getElementById('first').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (!username.includes('@')) {
+                errorMessage.textContent = 'The password is incorrect.';
+            } else {
+                // Proceed with form submission or further validation
+                errorMessage.textContent = '';
+                alert('Login successful');
+                window.location.href = 'Front page.html'; // Redirect to the front page
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <div class="loginbox">
+            <form onsubmit="validateLogin(event)">
+                <h1>Login page</h1>
+                <label for="first">
+                    Username or email:<br>
+                </label>
+                <input type="text" id="first" name="first" placeholder="Enter your Username or email" required><br>
+
+                <label for="password">
+                    Password:<br>
+                </label>
+                <input type="password" id="password" name="password" placeholder="Enter your Password" required><br>
+
+                <div class="wrap"><br>
+                    <button type="submit" class="ss">
+                        Submit
+                    </button>
+                </div>
+                <p id="error-message" class="error"></p>
+            </form>
+
+            <p>Not registered?
+                <a href="https://support.google.com/mail/answer/56256?hl=en" class="ll">Create new account</a>
+            </p>
+        </div>
+    </center>
+</body>
+
+</html>
